@@ -1,0 +1,758 @@
+img {  max-width: 100%; height: auto; }   
+
+figure { img {max-width: 100%;} }
+
+select {
+  background-color : @body-bg;
+  border           : 1px solid lighten(@text-color,60%);
+  border-radius    : 0px;
+  color            : @text-color;
+  font-size        : @font-size-base - 1;
+  height           : inherit;
+  line-height      : @line-height-base;
+  padding          : @padding-base-vertical @padding-base-horizontal;
+}
+
+.brand-colors {
+  height  : 0;
+  width   : 0;
+  display : none;
+  margin  : 0;
+  padding : 0;
+  color: @brand-primary;
+  background-color: @brand-secondary;
+}
+
+i.fa.primary {color:@brand-primary;}
+i.fa.secondary {color:@brand-secondary;}
+i.fa.success {color:@brand-success;}
+i.fa.info {color:@brand-info;}
+i.fa.warning {color:@brand-warning;}
+i.fa.danger {color:@brand-danger;}
+
+#imagelightbox iframe {  border: none;  }
+
+.pager li a {
+  background-color : @brand-primary;
+  border-radius    : @border-radius-base;
+  color            : #fff;
+  font-weight      : 600;
+  padding          : 10px 20px;
+  &:hover {  color: @gray;  }
+}
+
+.video_iframe iframe {
+  border : none;
+  width  : 100%;
+}
+
+/* 
+ =The Events Calendar Plugin
+ -------------------------------------------------------------- 
+*/
+
+.single-tribe_events .tribe-events-schedule { margin: 0 0 10px 0; }
+.single-tribe_events .tribe-events-schedule h2 { display: inline-block;margin-top: 0px; }
+.single-tribe_events .tribe-events-event-meta { background-color:inherit; }
+
+  a.tribe-events-gmap:link, a.tribe-events-gmap:visited {color: #3B9DC6 !important; }
+  a.tribe-events-gmap:hover, a.tribe-events-gmap:active {color: #21759B !important; }
+
+  .tribe-events-event-categories a:link, .tribe-events-event-categories a:visited {color: #3B9DC6 !important; }
+  .tribe-events-event-categories a:hover, .tribe-events-event-categories a:active {color: #21759B !important; }
+
+/* 
+ =3D Links Effect
+ -------------------------------------------------------------- 
+*/
+
+.roll {
+  display            : inline-block;
+  overflow           : hidden;
+  perspective        : 400px;
+  perspective-origin : 50% 50%;
+  vertical-align     : top;
+  & span {
+    display          : block;
+    padding          : 0 2px;
+    position         : relative;
+    transform-origin : 50% 0%;
+    transform-style  : preserve-3d;
+    transition       : all 400ms ease;
+  }
+  &:hover span {
+    background : #111;
+    transform  : translate3d( 0px, 0px, -30px ) rotateX( 90deg );
+  }
+  & span:after {
+    background       : @brand-secondary;
+    color            : #fff;
+    content          : attr(data-title);
+    display          : block;
+    left             : 0;
+    padding          : 0 2px;
+    position         : absolute;
+    top              : 0;
+    transform        : translate3d( 0px, 105%, 0px ) rotateX( -90deg );
+    transform-origin : 50% 0%;
+  }
+}
+
+/* 
+ = BACK TO TOP BUTTON
+ -------------------------------------------------------------- 
+*/
+
+
+  #return-to-top {
+    position        : fixed;
+    bottom          : 20px;
+    right           : 20px;
+    background      : rgb(0, 0, 0);
+    background      : rgba(0, 0, 0, 0.7);
+    width           : 50px;
+    height          : 50px;
+    display         : block;
+    text-decoration : none;
+    border-radius   : 35px;
+    display         : none;
+    transition      : all 0.3s ease;
+    z-index         : 10001; // PLETODO: change z-index and test
+    & i {
+        color      : #fff;
+        margin     : 0;
+        position   : relative;
+        left       : 16px;
+        top        : 10px;
+        font-size  : 19px;
+        transition : all 0.3s ease;
+    }
+    &:hover {
+        background: rgba(0, 0, 0, 0.9);
+    }
+    &:hover i {
+        color: #fff;
+        top: 5px;
+    }
+  }
+
+/* =SVG Loader
+-------------------------------------------------------------- */
+
+.loader-modal {
+  display  : block;
+  display  : none; 
+  height   : 100%;
+  left     : 0;
+  margin   : 0;
+  overflow : auto;
+  padding  : 0;
+  position : fixed;
+  top      : 0;
+  width    : 100%;
+  z-index  : 100;
+}
+
+.main.ajaxed {
+  z-index: 999;
+}
+
+.ajax-error {
+  left     : 25%; 
+  position : absolute;
+  top      : 25%;
+}
+
+.member-bio, .team-bio {  display : none;  }
+
+#loader {  z-index: 99999;  }
+
+.close-handle {
+  cursor   : pointer;
+  //height   : 40px;
+  position : fixed;
+  right    : 60px;
+  top      : 30px;
+  //width    : 40px;
+  z-index  : 999999;
+  padding: 30px;
+  &:before, &:after {
+    -webkit-transition : all 200ms linear;
+    content            : '';
+    height             : 3px;
+    position           : absolute;
+    top                : 29px;
+    left: 11px;
+    transition         : all 200ms linear; 
+    width              : 40px;
+    }
+  &:before,
+  &:hover:after {
+    -webkit-transform : rotate(-45deg);
+    -ms-transform     : rotate(-45deg);
+    transform         : rotate(-45deg); 
+  }
+  &:after,
+  &:hover:before {
+    -webkit-transform : rotate(45deg);
+    -ms-transform     : rotate(45deg);
+    transform         : rotate(45deg); 
+  }
+}
+
+.close-handle {
+  border-radius: 60px;
+  background-color: #fff;
+  &:before, &:after {
+    background-color: #323232;
+  }
+}  
+
+.loader-modal-content {}
+
+/* =SVG Page Loading Effect
+-------------------------------------------------------------- */
+.pageload-overlay {
+  height     : 100%;
+  left       : 0;
+  position   : fixed;
+  top        : 0;
+  visibility : hidden; 
+  width      : 100%;
+  &.show {  visibility: visible;  }
+  & svg {
+    left           : 0;
+    pointer-events : none; 
+    position       : absolute;
+    top            : 0;
+    & path {  fill: @brand-primary;  }
+    }
+  /* REMOVED LOADING BALLS */
+  &::after, &::before {
+    display: none;
+    opacity            : 0;
+    visibility         : hidden;
+    z-index            : 0;
+    }
+  }    
+
+/* OWL SLIDER ADDITIONS */
+
+ul.owl-carousel {
+  list-style: none;
+}
+
+.profile_single_photo .stretchy_wrapper img {z-index:-1;}
+
+/* =DEMOs Page
+-------------------------------------------------------------- */
+
+//== PORTFOLIO 
+
+.skincolor_alpha (@alpha_percentage: 60%) {   // PLENOTE: Deprecated... 
+    background-color: @brand-primary;
+    background-color: fade(@brand-primary, @alpha_percentage);
+} 
+
+//== VIDEO BACKGROUND
+
+.video_bg_col video,
+.video_bg_row video {
+      display    : inline-block;
+      opacity    : 1;
+      position   : absolute;
+      right      : 0;
+      top        : 0;
+      visibility : visible;
+      z-index    : -1;
+}
+
+.video_bg_row .video_bg_poster {
+  background-position : 50% 50%;
+  background-repeat   : no-repeat;
+  background-size     : cover;
+  height              : 100%;
+  left                : 0;
+  position            : absolute;
+  top                 : 0;
+  width               : 100%;
+}
+
+.video_bg_row video {
+      height     : auto;
+      width      : 100%;
+}
+.video_bg_col video {
+      height     : 100%;
+      width      : auto;
+}
+
+/* 
+ =WPML
+ -------------------------------------------------------------- 
+*/
+
+.wpml-ls-menu-item a img {
+  vertical-align: top !important;
+  max-width: 30px !important;
+}
+
+
+/* 
+ =CF7 Acceptance Checkbox Fix
+ -------------------------------------------------------------- 
+*/
+
+.wpcf7-form-control.wpcf7-acceptance {
+padding-left: 0;
+background-color: transparent;
+border: none;
+color: #fff;
+}
+
+.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item label input[type="checkbox"] {
+position: relative;
+top: 2px;
+margin-left:0px;  
+}
+
+.wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item { 
+margin-left: 0; 
+}
+
+
+
+/* 
+ =VC 5-Column Layouts
+ -------------------------------------------------------------- 
+*/
+
+.non_responsive .row .col-sm-1\/5 {
+ position:relative;
+ float:left;
+ width:20%;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px
+}
+.non_responsive .row .col-sm-2\/5 {
+ position:relative;
+ float:left;
+ width:40%;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px
+}
+.non_responsive .row .col-sm-3\/5 {
+ position:relative;
+ float:left;
+ width:60%;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px
+}
+.non_responsive .row .col-sm-4\/5 {
+ position:relative;
+ float:left;
+ width:80%;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px
+}
+.non_responsive .row .col-sm-5\/5 {
+ position:relative;
+ float:left;
+ width:100%;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px
+}
+.non_responsive .row .col-sm-offset-5\/5 {
+ margin-left:100%
+}
+.non_responsive .row .col-sm-offset-4\/5 {
+ margin-left:80%
+}
+.non_responsive .row .col-sm-offset-3\/5 {
+ margin-left:60%
+}
+.non_responsive .row .col-sm-offset-2\/5 {
+ margin-left:40%
+}
+.non_responsive .row .col-sm-offset-1\/5 {
+ margin-left:20%
+}
+.non_responsive .row .col-sm-offset-0\/5 {
+ margin-left:0
+}
+.col-lg-1\/5,
+.col-lg-2\/5,
+.col-lg-3\/5,
+.col-lg-4\/5,
+.col-lg-5\/5,
+.col-md-1\/5,
+.col-md-2\/5,
+.col-md-3\/5,
+.col-md-4\/5,
+.col-md-5\/5,
+.col-sm-1\/5,
+.col-sm-2\/5,
+.col-sm-3\/5,
+.col-sm-4\/5,
+.col-sm-5\/5,
+.col-xs-1\/5,
+.col-xs-2\/5,
+.col-xs-3\/5,
+.col-xs-4\/5,
+.col-xs-5\/5 {
+ position:relative;
+ min-height:1px;
+ padding-left:15px;
+ padding-right:15px;
+ -webkit-box-sizing:border-box;
+ -moz-box-sizing:border-box;
+ box-sizing:border-box
+}
+.col-xs-1\/5,
+.col-xs-2\/5,
+.col-xs-3\/5,
+.col-xs-4\/5,
+.col-xs-5\/5 {
+ float:left
+}
+.col-xs-5\/5 {
+ width:100%
+}
+.col-xs-4\/5 {
+ width:80%
+}
+.col-xs-3\/5 {
+ width:60%
+}
+.col-xs-2\/5 {
+ width:40%
+}
+.col-xs-1\/5 {
+ width:20%
+}
+.col-xs-pull-5\/5 {
+ right:100%
+}
+.col-xs-pull-4\/5 {
+ right:80%
+}
+.col-xs-pull-3\/5 {
+ right:60%
+}
+.col-xs-pull-2\/5 {
+ right:40%
+}
+.col-xs-pull-1\/5 {
+ right:20%
+}
+.col-xs-pull-0\/5 {
+ right:auto
+}
+.col-xs-push-5\/5 {
+ left:100%
+}
+.col-xs-push-4\/5 {
+ left:80%
+}
+.col-xs-push-3\/5 {
+ left:60%
+}
+.col-xs-push-2\/5 {
+ left:40%
+}
+.col-xs-push-1\/5 {
+ left:20%
+}
+.col-xs-push-0\/5 {
+ left:auto
+}
+.col-xs-offset-5\/5 {
+ margin-left:100%
+}
+.col-xs-offset-4\/5 {
+ margin-left:80%
+}
+.col-xs-offset-3\/5 {
+ margin-left:60%
+}
+.col-xs-offset-2\/5 {
+ margin-left:40%
+}
+.col-xs-offset-1\/5 {
+ margin-left:20%
+}
+.col-xs-offset-0\/5 {
+ margin-left:0
+}
+.rtl .rtl-columns-reverse .col-xs-1\/5,
+.rtl .rtl-columns-reverse .col-xs-2\/5,
+.rtl .rtl-columns-reverse .col-xs-3\/5,
+.rtl .rtl-columns-reverse .col-xs-4\/5,
+.rtl .rtl-columns-reverse .col-xs-5\/5,
+.rtl .rtl-columns-reverse .non_responsive .row .col-sm-1\/5,
+.rtl .rtl-columns-reverse .non_responsive .row .col-sm-2\/5,
+.rtl .rtl-columns-reverse .non_responsive .row .col-sm-3\/5,
+.rtl .rtl-columns-reverse .non_responsive .row .col-sm-4\/5,
+.rtl .rtl-columns-reverse .non_responsive .row .col-sm-5\/5 {
+ float:right
+}
+@media (min-width:768px) {
+ .col-sm-1\/5,
+ .col-sm-2\/5,
+ .col-sm-3\/5,
+ .col-sm-4\/5,
+ .col-sm-5\/5 {
+  float:left
+ }
+ .rtl .rtl-columns-reverse .col-sm-1\/5,
+ .rtl .rtl-columns-reverse .col-sm-2\/5,
+ .rtl .rtl-columns-reverse .col-sm-3\/5,
+ .rtl .rtl-columns-reverse .col-sm-4\/5,
+ .rtl .rtl-columns-reverse .col-sm-5\/5 {
+  float:right
+ }
+ .col-sm-5\/5 {
+  width:100%
+ }
+ .col-sm-4\/5 {
+  width:80%
+ }
+ .col-sm-3\/5 {
+  width:60%
+ }
+ .col-sm-2\/5 {
+  width:40%
+ }
+ .col-sm-1\/5 {
+  width:20%
+ }
+ .col-sm-pull-5\/5 {
+  right:100%
+ }
+ .col-sm-pull-4\/5 {
+  right:80%
+ }
+ .col-sm-pull-3\/5 {
+  right:60%
+ }
+ .col-sm-pull-2\/5 {
+  right:40%
+ }
+ .col-sm-pull-1\/5 {
+  right:20%
+ }
+ .col-sm-pull-0\/5 {
+  right:auto
+ }
+ .col-sm-push-5\/5 {
+  left:100%
+ }
+ .col-sm-push-4\/5 {
+  left:80%
+ }
+ .col-sm-push-3\/5 {
+  left:60%
+ }
+ .col-sm-push-2\/5 {
+  left:40%
+ }
+ .col-sm-push-1\/5 {
+  left:20%
+ }
+ .col-sm-push-0\/5 {
+  left:auto
+ }
+ .col-sm-offset-5\/5 {
+  margin-left:100%
+ }
+ .col-sm-offset-4\/5 {
+  margin-left:80%
+ }
+ .col-sm-offset-3\/5 {
+  margin-left:60%
+ }
+ .col-sm-offset-2\/5 {
+  margin-left:40%
+ }
+ .col-sm-offset-1\/5 {
+  margin-left:20%
+ }
+ .col-sm-offset-0\/5 {
+  margin-left:0
+ }
+}
+@media (min-width:992px) {
+ .col-md-1\/5,
+ .col-md-2\/5,
+ .col-md-3\/5,
+ .col-md-4\/5,
+ .col-md-5\/5 {
+  float:left
+ }
+ .rtl .rtl-columns-reverse .col-sm-1\/5,
+ .rtl .rtl-columns-reverse .col-sm-2\/5,
+ .rtl .rtl-columns-reverse .col-sm-3\/5,
+ .rtl .rtl-columns-reverse .col-sm-4\/5,
+ .rtl .rtl-columns-reverse .col-sm-5\/5 {
+  float:right
+ }
+ .col-md-5\/5 {
+  width:100%
+ }
+ .col-md-4\/5 {
+  width:80%
+ }
+ .col-md-3\/5 {
+  width:60%
+ }
+ .col-md-2\/5 {
+  width:40%
+ }
+ .col-md-1\/5 {
+  width:20%
+ }
+ .col-md-pull-5\/5 {
+  right:100%
+ }
+ .col-md-pull-4\/5 {
+  right:80%
+ }
+ .col-md-pull-3\/5 {
+  right:60%
+ }
+ .col-md-pull-2\/5 {
+  right:40%
+ }
+ .col-md-pull-1\/5 {
+  right:20%
+ }
+ .col-md-pull-0\/5 {
+  right:auto
+ }
+ .col-md-push-5\/5 {
+  left:100%
+ }
+ .col-md-push-4\/5 {
+  left:80%
+ }
+ .col-md-push-3\/5 {
+  left:60%
+ }
+ .col-md-push-2\/5 {
+  left:40%
+ }
+ .col-md-push-1\/5 {
+  left:20%
+ }
+ .col-md-push-0\/5 {
+  left:auto
+ }
+ .col-md-offset-5\/5 {
+  margin-left:100%
+ }
+ .col-md-offset-4\/5 {
+  margin-left:80%
+ }
+ .col-md-offset-3\/5 {
+  margin-left:60%
+ }
+ .col-md-offset-2\/5 {
+  margin-left:40%
+ }
+ .col-md-offset-1\/5 {
+  margin-left:20%
+ }
+ .col-md-offset-0\/5 {
+  margin-left:0
+ }
+}
+@media (min-width:1200px) {
+ .col-lg-1\/5,
+ .col-lg-2\/5,
+ .col-lg-3\/5,
+ .col-lg-4\/5,
+ .col-lg-5\/5 {
+  float:left
+ }
+ .rtl .rtl-columns-reverse .col-sm-1\/5,
+ .rtl .rtl-columns-reverse .col-sm-2\/5,
+ .rtl .rtl-columns-reverse .col-sm-3\/5,
+ .rtl .rtl-columns-reverse .col-sm-4\/5,
+ .rtl .rtl-columns-reverse .col-sm-5\/5 {
+  float:right
+ }
+ .col-lg-5\/5 {
+  width:100%
+ }
+ .col-lg-4\/5 {
+  width:80%
+ }
+ .col-lg-3\/5 {
+  width:60%
+ }
+ .col-lg-2\/5 {
+  width:40%
+ }
+ .col-lg-1\/5 {
+  width:20%
+ }
+ .col-lg-pull-5\/5 {
+  right:100%
+ }
+ .col-lg-pull-4\/5 {
+  right:80%
+ }
+ .col-lg-pull-3\/5 {
+  right:60%
+ }
+ .col-lg-pull-2\/5 {
+  right:40%
+ }
+ .col-lg-pull-1\/5 {
+  right:20%
+ }
+ .col-lg-pull-0\/5 {
+  right:auto
+ }
+ .col-lg-push-5\/5 {
+  left:100%
+ }
+ .col-lg-push-4\/5 {
+  left:80%
+ }
+ .col-lg-push-3\/5 {
+  left:60%
+ }
+ .col-lg-push-2\/5 {
+  left:40%
+ }
+ .col-lg-push-1\/5 {
+  left:20%
+ }
+ .col-lg-push-0\/5 {
+  left:auto
+ }
+ .col-lg-offset-5\/5 {
+  margin-left:100%
+ }
+ .col-lg-offset-4\/5 {
+  margin-left:80%
+ }
+ .col-lg-offset-3\/5 {
+  margin-left:60%
+ }
+ .col-lg-offset-2\/5 {
+  margin-left:40%
+ }
+ .col-lg-offset-1\/5 {
+  margin-left:20%
+ }
+ .col-lg-offset-0\/5 {
+  margin-left:0
+ }
+}

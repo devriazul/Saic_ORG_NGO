@@ -1,0 +1,291 @@
+Changelog
+-----------------
+
+Version 2.1.0 [ 25/11/2020 ]
+
+ - FIX: Menu selection fields are displaying the menu name, instead of menu ID
+ - UPDATE: WPBakery Page Builder to version 6.4.2
+ - UPDATE: Plethora Features Library to the version 1.7.7
+ - UPDATE: Revolution Slider to version 6.3.1
+
+Version 2.0.0 [ 26/10/2020 ]
+
+ - UPDATE: WPBakery Page Builder to version 6.4.1
+
+Version 1.6.8 [ 15/09/2020 ]
+
+ - FIX: URL locations in main stylesheet
+ - UPDATE: WPBakery Page Builder to version 6.4
+ - UPDATE: Plethora Features Library to the version 1.7.6
+
+Version 1.6.7 [ 06/09/2020 ]
+
+ - FIX: Typography fields JS fix
+ - UPDATE: Plethora Features Library to the version 1.7.5
+
+Version 1.6.6 [ 05/09/2020 ]
+
+ - UPDATE: WPBakery Page Builder to version 6.3
+ - UPDATE: Plethora Features Library to the version 1.7.4
+ - IMPROVEMENT/FIX: Redux Framework to 4.1.15 ( solving lots of micro issues with fields in WP 5.5 installations )
+ - IMPROVEMENT: WP LESS improvements, speeding up the stylesheet compiling and frontend performance
+ - IMPROVEMENT: Fully compatible with PHP 7.4 ( does not produce any notices or warnings )
+
+Version 1.6.5 [ 05/05/2020 ]
+
+ - UPDATE: WPBakery Page Builder ver 6.2
+ - UPDATE: Plethora Features Library to version 1.7.3
+
+Version 1.6.4 [ 10/02/2020 ]
+
+ - IMPROVEMENT: Button shortcode size/color options not visible ( as they are not affecting the result ) when style is set to "Link Button"
+ - UPDATE: WPBakery Page Builder ver 6.1
+ - UPDATE: Plethora Features Library to version 1.7.2
+
+Version 1.6.3 [ 03/12/2019 ]
+
+ - IMPROVEMENT: One Pager Scrolling is working both with mixed target menu links and links included in editor content.
+ - IMPROVEMENT: Added additional text that can be displayed in various positions within the Events Calendar archive views
+ - IMPROVEMENT: Added a 'plethora_anypostloop_{post_type}_{type}_item_opts' filter hook, that allows developers to filter post results
+ for any post loop shortcode ( Posts, Rooms, Services grids and sliders ).
+ - FIX: Regex conflict with PHP 7.3, causing issues with icon file creation.
+ - FIX: Revolution sliders with Ken Burns effect
+ - FIX: Removed inactive intro text and align options for Events Calendar archive views
+ - UPDATE: Plethora Features Library to version 1.7.1
+
+Version 1.6.2 [ 26/07/2019 ]
+
+ - UPDATE: WPBakery Page Builder ver 6.0.5
+
+Version 1.6.1 [ 1/07/2019 ]
+
+ - UPDATE: WPBakery Page Builder ver 6.0.3
+ - UPDATE: Plethora Features Library plugin to 1.7.0
+ - UPDATE: Existing demo updates
+ - UPDATE: Added slider option for additional text visibiliy on mobile views
+ - FIX: Top bar menu alignment issue. Now menus are aligned properly
+
+Version 1.6.0 [ 25/02/2019 ]
+
+ - UPDATE: WPBakery Page Builder ver 5.7
+ - FIX: Slider navigation arrows can be set not to be displayed
+ - FIX: Removed non working "ghost" testimonial slider element from WPBakery Page Builder panel ( does not affect any existing installations )
+
+Version 1.5.9 [ 15/01/2019 ]
+
+ - UPDATE: WPBakery Page Builder ver 5.6
+ - UPDATE: Envato Market Plugin ver 2.0.1
+ - FIX: Fixing Carousel issues and updating Bootstrap JS to version 3.2.0
+ - FIX: Fixing About Us widget issue of the anchor tag with a missing closing tag.
+ - FIX: Fixing issues with RTL Owl Carousel elements
+
+Version 1.5.8 [ 22/10/2018 ]
+
+ - UPDATE: WPBakery Page Builder ( former Visual Composer ) to ver 5.5.5
+ - UPDATE: Plethora Features to ver 1.6.8
+ - IMPROVEMENT: Adding Posts Slider Shortcode
+ - IMPROVEMENT: About Us Wiget: Adding tel: link on telephone field. Adding Maps link on the text field also, adding link on Email icon along with the link on the text.
+ - FIX: Adding missing Video Frame on Teaser Box which can now display videos.
+ - FIX: Fixing Header Subtitle animation.
+ - FIX: Fixing broken URL links on the Button and TeaserBox shortcodes due to improper escaping (#2705).
+ - FIX: Small styling issue with button set options on Event Calendar edit event view
+
+Version 1.5.7 [ 04/07/2018 ]
+
+ - UPDATE: Visual Composer to ver 5.5.1
+ - UPDATE: Added consent checkbox for the new comment form
+ - UPDATED: Added CSS for RTL languages
+ - IMPROVEMENT: Added Theme Option that allows users to add custom classes to the body tag
+ - FIX: Navigation Menu Items can now be configured to display a custom Title Attribute on hover.
+
+Version 1.5.6 [ 11/05/2018 ]
+
+Version 1.5.5 [ 13/04/2018 ]
+
+ - UPDATE: Visual Composer to version 5.4.7
+ - UPDATE: Bootstrap to version 3.3.7
+ - IMPROVEMENT: Applied some fixes that eliminate PHP warnings on PHP 7.1 / 7.2 installations
+
+Version 1.5.4 [ 26/02/2018 ]
+
+ - UPDATE: Visual Composer to version 5.4.5
+ - UPDATE: Plethora Features Library plugin to 1.6.2
+ - BUG FIX: Visual Composer Disable Row is working.
+ - IMPROVEMENT: Logo URL is now translatable via WPML.
+
+Version 1.5.3 [ 22/11/2017 ]
+
+- UPDATE: Visual Composer to version 5.4.4
+- UPDATE: Media Panel Map now supports multiple marker pins.
+
+Version 1.5.2 [ 03/11/2017 ]
+
+- UPDATE: Visual Composer to version 5.4.2
+- BUG FIX: [ MODULE: WOOCOMMERCE ] Fixing problem with Add to Cart button on Mobile Product Pages with empty content
+- BUG FIX: [ MODULE: VC | BASE ] A minor workaround fixing Varnish Cache issues.
+- IMPROVEMENT: [ HEADER ] Adding option for Sticky Top Bar
+- IMPROVEMENT: [ THEME OPTIONS ] Blinking indication when a misplaced <script> tag is pasted on Custom JS or Google Analytics textareas
+- IMPROVEMENT: [ DEMOS ] Updated Appointment form with special datepicker field
+
+Version 1.5.1 [ 14/08/2017 ]
+
+ - BUG FIX:[ MODULE: NAV WALKER ] Activate 'title' field for menu items
+ - BUG FIX:[ WIDGET: ANY LATEST POST ] Display issues with special language characters
+ - BUG FIX:[ WIDGET: ANY LATEST POSTS ] Issue with local date displays
+ - BUG FIX:[ PLETHORA_THEME ] Issue with child template parts that were not included on parent theme
+ - BUG FIX:[ MODULE: BACK TO TOP ] Theme / metabox options were not visible
+ - BUG FIX:[ POST TYPE: POST ] "No posts" title/text were not displayed when zero results returned
+ - IMPROVEMENT:[ BUNDLED PLUGINS ] Updated Visual Composer to the latest 5.2.1 version
+ - IMPROVEMENT:[ MODULE: COLOR SETS ] Additional color HEX value validation to avoid problems on LESS parsing
+
+ Version 1.5.0 [ 02/06/2017 ]
+
+ - UPDATE: added automatic post excerpts support for Any Latest Posts widget
+ - UPDATE: Added ajax loading for terms index shortcode links
+ - FIX: linked products and product attributes are working fine for WooCommerce >3.0 versions
+ - FIX: issue with menu items title attribute
+ - FIX: added orientation class attribute for About Us widget
+ - FIX: Latest News Widget updated excerpt/content switch
+ - FIX: Fixed Redux / Yoast conflict
+
+ver. 1.4.9 [ 20/4/2017 ]
+
+ - NEW: Added Conference Demo
+ - UPDATE: Full compatibility with WooCommerce 3.0.3 ver ( fixes related products and several product gallery issues )
+ - UPDATE: All repeater field texts can be discovered/translated by WPML
+ - UPDATE: Visual Composer to  5.1.1 version
+ - UPDATE: Added order by date selection for Profile grid shortcode
+ - UPDATE: Social icons can accept skype protocol URLs ( skype / callto links )
+ - FIX: Yoast SEO plugin tabs are displayed normally
+ - FIX: Slider post fix for the issue occured when changing slides order
+ - FIX: Profile Grid fix for names containing special characters
+ - FIX: Several micro fixes
+
+ver. 1.4.8 [ 13/1/2017 ]
+
+ - UPDATE: Visual Composer to 5.0.1 version
+ - UPDATE: Added First and Last name fields on the MailChimp form element.
+ - UPDATE: Added shortcode capabilities for top bar text areas
+ - FIX: Several micro fixes
+
+ver. 1.4.7 [ 19/10/2016 ]
+
+ - NEW: Dentist demo added
+ - UPDATE: Added some VC related theme options that will allow administrators to enable ( at their own risk ) the VC front editor and some deprecated VC elements.
+ - UPDATE: Added admin notice to inform about the icon library re-indexing process
+ - FIX: Enabled back link target option for the VC single image shortcode
+ - FIX: Removed static 'events' page from 'Health Coach' demo
+ - FIX: Several heading and button text output issues
+ - FIX: Redux and Yoast SEO plugin style conflict, affecting "Readability" analysis display
+ - FIX: Slider lazy loading and mouse/touch options work as expected
+ - FIX: Timetable widget issue
+ - FIX: User set CPTs archive fatal error fixed
+ - FIX: Search results issue
+
+
+ver. 1.4.6 [ 17/09/2016 ]
+
+ - NEW: Full support for The Events Calendar plugin
+ - NEW: Added Envato Market plugin, that allows easier updates for Envato products ( themes & plugins )
+ - UPDATE: Visual Composer to 4.12.1 version
+ - UPDATE: Minor improvements for the Demo Importer functionality
+ - FIX: Added missing info from style.css, that would cause problems on some multilingual installations
+ - FIX: WooCommerce shortcodes display issue and some responsive layout improvements
+ - FIX: Removing native drop down icons for IE select elements
+ - FIX: Fixing special characters that were not being displayed in the Slider buttons
+ - FIX: Disabled dropdown menu hover functionality on mobile view
+ - FIX: Custom sidebars limit, previously set to 10, now is set to 100 records
+ - FIX: Some typos for the owlslider init JS script configuration ( mouse drag, touch drag and lazy load options )
+
+ver. 1.4.5  [12/07/2016]
+
+ - NEW: Google Maps API options added. Now you can add your Google Maps API key.
+ - FIX: Slider arrows displayed normally
+ - FIX: Other microfixes
+
+ver. 1.4.4  [06/07/2016]
+
+ - NEW: Single Doctor demo added!
+ - UPDATE: Visual Composer to 4.12 version
+ - UPDATE: Removed footer info bar height option
+ - UPDATE: Added extra class field in Classic Post / Teaser Box shortcodes
+ - UPDATE: Added Design Options tab and extra class field in Fixed Ratio Media /   Pricing Plan / Testimonials Slider shortcodes
+ - UPDATE: Added a date display option for Latest News widget
+ - FIX: Teaser box issue with button display
+ - FIX: Third level menu works fine.
+ - FIX: Demo Importer micro fixes
+ - FIX: Google Maps displays custom marker images correctly
+ - FIX: Folded section styling issue
+
+
+ver. 1.4.3  [15/04/2016]
+
+ - UPDATE: Icons Library functionality that allowed uploading your own icons font was dropped, due to lots of support tickets containing unexpected issues with several non WP-friendly hosts. Please make sure that you reset the 'Theme Options > Icons Library' section after update. The feature will continue to work, serving our preset libraries but any custom libraries that may added will not work . Existing customers that find this functionality crucial for their projects, may address to our support to provide them a theme-child patch that will recover the feature as it worked until now. Thank you very much for your understanding.
+ - UPDATE: Visual Composer to 4.11.2.1 version
+
+ver. 1.4.2  [15/04/2016]
+
+ - UPDATE: Compatibility tasks for WP 4.5
+ - UPDATE: Visual Composer to 4.11.2 version
+ - FIX: New comments name field issue fixed ( thanks to Jean Leal, #2313 )
+ - FIX: Slider dropdown field is working as expected on WPML translations ( thanks to studiocreation, #2323 )
+ - FIX: Social icons switch for Profiles Grid shortcode is working
+ - FIX: Align issue Heading Group shortcode
+ - FIX: Other microfixes
+
+
+ver. 1.4.1  [03/04/2016]
+
+ - UPDATE: Dropped support for PHP 5.3. <a href="http://plethorathemes.com/blog/dropping-support-for-php-5-3-x/" target="_blank">Read more here </a>. PHP 5.3 installations will continue to function, but will not be technically supported.
+ - UPDATE: Rebuilt for Terms Index shortcode class to support multilingual terms
+ - UPDATE: Added 'Design Options' tab and improved VC options panel layout for shortcodes: Classic Post, Button, Newsletter form, Heading Group and Terms Index...all the rest shortcodes will follow on next update
+ - UPDATE: Visual Composer to 4.11.1 version
+ - FIX: Blog search works fine
+ - FIX: Profiles Grid shortcode fix for profiles display order ( thanks to dpicot68, #2252 )
+ - FIX: Text tranform for buttons works fine
+
+ver. 1.4 [15/03/2016]
+
+ - NEW: Health Coach Demo content added
+ - NEW: Demo importer tool added. Demo import is easy now!
+ - UPDATE: Visual Composer to 4.11 version
+ - UPDATE: Plethora Features Library to 1.4 version
+ - UPDATE: Added slider configuration for Testimonial Slider shortcode
+ - UPDATE: Added RTL option for Media panel slider / Testimonial shortcode slider
+ - UPDATE: Eliminated a single PHP 7.0 deprecate notice
+ - FIX: Webfont Medical Icons, all icons working fine ( thanks to davekjazz, #2146 )
+ - FIX: Animate CSS fixes for Safari ( thanks to davekjazz, #2144 )
+ - FIX: Media Panel Slider text fields display HTML properly ( thanks to comfortcommunication, #2134 )
+ - FIX: Teaser box button switch works fine on Firefox
+
+ver. 1.3.1 [23/02/2016]
+
+ - UPDATE: Some improvements for top bar default and custom text functionality. Thank you PeterHoppe!
+ - UPDATE: Various minor design and admin UI improvements
+ - FIX: Some more improvements for Icons Library module that will eliminate some issues with self-signed SSL installations.
+ - FIX: Testimonial slider issue when displayed a single testimonial post
+
+ver. 1.3 [18/02/2016]
+
+ - UPDATE: Added authentication support for remote calls used on Icons Library. Will fix several tickets arrived with fatal errors on password protected staging installations.
+ - FIX: Minor improvements & fixes.
+ - NOTE: Visual Composer plugin should not produce notices for manual updates, we are responsinble for keeping up with this. Nevertheless, those notices are produced, an issue that we have have already forwarded to the plugin author who informed us that is working for a fix. Since the latest VC 4.10 does not include a fix for this issue and the plugin's main functionality is not affected, we decided to wait for the next update that will resolve this. Thanks for your patience!
+
+ver. 1.2  [06/02/2016]
+
+ - NEW: Added support for Ecwid Shopping Cart plugin.
+ - NEW: Added advanced support for user created custom post types ( i.e. CPTs created programmatically or using a plugin such as Custom Post Type UI ). A dedicated options tab will be added on Theme Options for each CPT you create.
+ - UPDATE: Updated PFL plugin to 1.2
+ - UPDATE: .POT files updated.
+ - FIX: Minor fixes for profile page layout and profiles grid shortcode.Popup window functionality works fine.
+ - NOTE: Visual Composer plugin should not produce notices for manual updates, we are responsinble for keeping up with this. Nevertheless, those notices are produced, an issue that we have have already forwarded to the plugin author who informed us that is working for a fix. Since the latest VC 4.9.2 does not include a fix for this issue and the plugin's main functionality is not affected, we decided to wait for the next update that will resolve this. Thanks for your patience!
+
+ver. 1.1  [25/01/2016]
+
+ - UPDATE: added admin notice for PHP 5.2 hosting packages ( thanks to Mr Gonzalez, ticket #1974 )
+ - FIX: array call fix causing fatal error on PHP 5.3 hosting packages ( PFL )
+
+ver. 1.0  [15/01/2016]
+
+ - Initial launch
+

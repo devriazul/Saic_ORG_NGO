@@ -1,0 +1,56 @@
+body.rtl {
+
+	.header .topbar div[class*='col-'] {
+
+		direction : ltr;
+		text-align: right;
+
+	}
+
+	.top_menu_container .menu-item img.iclflag {
+
+		float      : right;
+		margin-left: 4px;
+
+	}
+
+	// .menu_container {
+	// 	left: 45px;
+
+	// }
+
+	a.social_links {
+		left: 10px !important;
+		right: inherit;
+
+	}
+
+	#return-to-top i {
+
+		right: 16px;
+
+	}
+
+	/* WIDGETS */
+
+	.pl_about_us_widget p.contact_detail:nth-child(2) span {
+
+		direction   : ltr;
+		unicode-bidi: bidi-override;
+
+	}
+
+	/* CAROUSELS & SLIDERS */
+	.wpb_images_carousel,
+	.owl-carousel {
+		direction: ltr !important;
+	}
+
+}
+
+@media only screen and (max-width: 991px){
+
+	body.rtl .mainbar .logo {
+		display: block;
+	}
+}
